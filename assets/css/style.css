@@ -22,9 +22,27 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 20px 0;
+  padding: 130px 0;
+}
+
+.card-contents {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .card-contents p {
   padding: 20px 0;
+}
+
+button {
+  align-items: center;
+  padding: 10px;
+  margin: 12px;
+  cursor: pointer;
+  font-size: 24px;
+  background-color: red;
+  color: white;
+  border-radius: 1rem;
 }
