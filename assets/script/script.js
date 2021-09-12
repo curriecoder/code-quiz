@@ -19,15 +19,24 @@ var cardContents = document.querySelector("#card-contents")
 var startBtn = document.querySelector("#start");
 var h4Tags = document.querySelector("#title");
 var questionText = document.querySelector("#question-text");
+var answerList = document.createElement("ul");
+var answerBtn = document.createElement("button");
+var answerText = document.createElement("li");
 
 
 startBtn.addEventListener("click", function() {
   h4Tags.textContent = "Question 1";
-  cardContents.appendChild(h4Tags);
   questionText.textContent = "Is this really a test question?";
-  cardContents.appendChild(questionText);
+  answerText.textContent = "This is answer A";
+  answerText.setAttribute("style", "display: inline;");
+  answerList.setAttribute("style", "display: flex; align-items: center");
   startBtn.setAttribute("style", "display: none");
   countdown();
+  cardContents.appendChild(h4Tags);
+  cardContents.appendChild(questionText);
+  cardContents.appendChild(answerList);
+  answerList.appendChild(answerBtn);
+  answerList.appendChild(answerText);
 });
 
 var timeLeft = 60;
@@ -56,6 +65,12 @@ function countdown() {
   }, 1000);
 }
 
+//create buttons for answers
+
+
+//add text for answers
+
+
 function displayMessage() {
-  cardContents.textContent = "Time's up!"
+  cardContents.textContent = "Time's up!";
 }
