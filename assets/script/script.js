@@ -20,25 +20,48 @@ var startBtn = document.querySelector("#start");
 var h4Tags = document.querySelector("#title");
 var questionText = document.querySelector("#question-text");
 var answerList = document.createElement("ul");
-var answerBtn = document.createElement("button");
-var answerText = document.createElement("li");
+// create buttons for answers
+var answerBtnA = document.createElement("button");
+var answerBtnB = document.createElement("button");
+var answerBtnC = document.createElement("button");
+var answerBtnD = document.createElement("button");
+// add text for answers
+var answerTextA = document.createElement("li");
+var answerTextB = document.createElement("li");
+var answerTextC = document.createElement("li");
+var answerTextD = document.createElement("li");
 
-
+// creates start of quiz on startBtn 'click'
 startBtn.addEventListener("click", function() {
+  countdown();
   h4Tags.textContent = "Question 1";
   questionText.textContent = "Is this really a test question?";
-  answerText.textContent = "This is answer A";
-  answerText.setAttribute("style", "display: inline;");
-  answerList.setAttribute("style", "display: flex; align-items: center");
+  answerTextA.textContent = "This is answer A";
+  answerTextB.textContent = "This is answer B";
+  answerTextC.textContent = "This is answer C";
+  answerTextD.textContent = "This is answer D";
+
   startBtn.setAttribute("style", "display: none");
-  countdown();
+  answerList.setAttribute("style", "display: flex; flex-direction: column; align-items: center");
+  answerTextA.setAttribute("style", "display: flex; flex-direction: row-reverse; align-items: center")
+  answerTextB.setAttribute("style", "display: flex; flex-direction: row-reverse; align-items: center")
+  answerTextC.setAttribute("style", "display: flex; flex-direction: row-reverse; align-items: center")
+  answerTextD.setAttribute("style", "display: flex; flex-direction: row-reverse; align-items: center")
+  
   cardContents.appendChild(h4Tags);
   cardContents.appendChild(questionText);
   cardContents.appendChild(answerList);
-  answerList.appendChild(answerBtn);
-  answerList.appendChild(answerText);
+  answerTextA.appendChild(answerBtnA);
+  answerList.appendChild(answerTextA);
+  answerTextB.appendChild(answerBtnB);
+  answerList.appendChild(answerTextB);
+  answerTextC.appendChild(answerBtnC);
+  answerList.appendChild(answerTextC);
+  answerTextD.appendChild(answerBtnD);
+  answerList.appendChild(answerTextD);
 });
 
+// creates timer and counts down from 60 seconds 
 var timeLeft = 60;
 var timer = document.createElement("p")
 
@@ -47,7 +70,7 @@ function countdown() {
         
     timer.textContent = timeLeft;
   
-    timer.setAttribute("style", "position: absolute; top: 25px; right: 25px")
+    timer.setAttribute("style", "position: absolute; top: 25px; right: 30px")
   
     body.appendChild(timer);
 
@@ -65,12 +88,7 @@ function countdown() {
   }, 1000);
 }
 
-//create buttons for answers
-
-
-//add text for answers
-
-
+// creates end of game message
 function displayMessage() {
   cardContents.textContent = "Time's up!";
 }
