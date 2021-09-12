@@ -25,14 +25,14 @@ body {
   padding: 130px 0;
 }
 
-.card-contents {
+#card-contents {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 
-.card-contents p {
+#card-contents p {
   padding: 20px 0;
 }
 
