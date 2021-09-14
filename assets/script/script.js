@@ -69,33 +69,33 @@ startBtn.addEventListener("click", function() {
 var questions = [question1, question2, question3, question4, question5];
 
 var question1 = {
-  questionText: "Is this a question?",
-  answerList: ["answer A", "answer B", "answer C", "answer D"],
-  correctAnswer: "answer A"
+  questionText: "The condition in an if/else statement is enclosed within _____. ",
+  answerList: ["Quotes", "Curly Brackets", "Parenthesis", "Square Brackets"],
+  correctAnswer: "Curly Brackets"
 }
 
 var question2 = {
-  questionText: "Is this a question?",
-  answerList: ["answer A", "answer B", "answer C", "answer D"],
-  correctAnswer: "answer A"
+  questionText: "Arrays in JavaScript can be used to store _____.",
+  answerList: ["Numbers and Strings", "Other Arrays", "Booleans", "All of the Above"],
+  correctAnswer: "All of the Above"
 }
 
 var question3 = {
-  questionText: "Is this a question?",
-  answerList: ["answer A", "answer B", "answer C", "answer D"],
-  correctAnswer: "answer A"
+  questionText: "String values must be enclosed within _____ when being assigned to variables.",
+  answerList: ["Commas", "Curly Brackets", "Quotes", "Parenthesis"],
+  correctAnswer: "Quotes"
 }
 
 var question4 = {
-  questionText: "Is this a question?",
-  answerList: ["answer A", "answer B", "answer C", "answer D"],
-  correctAnswer: "answer A"
+  questionText: "A very useful tool used during development and debugging for printing content to the debugger is:",
+  answerList: ["JavaScript", "Terminal/Bash", "For Loops", "Console.log"],
+  correctAnswer: "Console.log"
 }
 
 var question5 = {
-  questionText: "Is this a question?",
-  answerList: ["answer A", "answer B", "answer C", "answer D"],
-  correctAnswer: "answer A"
+  questionText: "Commonly used data types DO NOT include:",
+  answerList: ["Strings", "Booleans", "Alerts", "Numbers"],
+  correctAnswer: "Alerts"
 }
 
 
