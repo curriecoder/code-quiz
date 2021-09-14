@@ -13,30 +13,45 @@ THEN the game is over
 WHEN the game is over
 THEN I can save my initials and my score -->
 
-
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="./assets/css/reset.css">
-  <link rel="stylesheet" href="./assets/css/style.css">
-  <title>Code Quiz</title>
-</head>
-<body>
-  <div class = "wrapper">
-    <div class = "container">
-      <div id = "card-contents">
-        <h4 id = "title">Welcome to currieCoder's Code Quiz!</h4>
-        <p id = "question-text">
-          To begin the quiz, hit the 'Start' button below.
-        </p>
-        <button id = "start">Start</button>
-      </div>
-    </div>
-  </div>
 
-  <script src="./assets/script/script.js"></script>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/CSS/style.css">
+    <title>Code Quiz</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <p id="view-scores"><a href="./highscore.html">View Highscores</a></p>
+            <p id="timer"></p>
+        </nav>
+    </header>
+    <main>
+        <section id="start">
+            <h1>currie<span>Coder's</span> Code Quiz</h1>
+            <p>
+                Click the 'Start' button below to begin the quiz!
+                Wrong answers will deduct 10 seconds from your remaining time.
+                Your time at the end of the quiz will be your score.
+            </p>
+            <button id="start-button">Start</button>
+        </section>
+        <section id="quiz" style="display: none;"></section>
+        <section id="enter-score" style="display: none;">
+            <h2 id="your-score"></h2>
+            <input type="text" id="user-input" placeholder="Enter Your Initials">
+            <button id="submit">&#10148;</button>
+        </section>
+        <section>
+            <h3 id="results"></h3>
+        </section>
+    </main>
+    <script src="./assets/script/script.js"></script>
 </body>
+
 </html>
