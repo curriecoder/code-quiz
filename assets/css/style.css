@@ -36,6 +36,18 @@ body {
   padding: 20px 0;
 }
 
+ul {
+  display: flex; 
+  flex-direction: column; 
+  align-items: start
+}
+
+li {
+  display: flex; 
+  flex-direction: row-reverse; 
+  align-items: center
+}
+
 button {
   align-items: center;
   padding: 10px;
@@ -46,3 +58,4 @@ button {
   color: white;
   border-radius: 1rem;
 }
+
