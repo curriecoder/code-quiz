@@ -61,6 +61,44 @@ startBtn.addEventListener("click", function() {
   answerList.appendChild(answerTextD);
 });
 
+//make an array for all of our questions so we can iterate when the page loads next question
+//make the questions objescts so we can change the text for the question and the answers (.value for content of key)
+//when user clicks an answer btn, the question changes to the next question in the array (++)
+//if the answer is incorrect, subtract 10 seconds from the countdown.
+
+var questions = [question1, question2, question3, question4, question5];
+
+var question1 = {
+  questionText: "Is this a question?",
+  answerList: ["answer A", "answer B", "answer C", "answer D"],
+  correctAnswer: "answer A"
+}
+
+var question2 = {
+  questionText: "Is this a question?",
+  answerList: ["answer A", "answer B", "answer C", "answer D"],
+  correctAnswer: "answer A"
+}
+
+var question3 = {
+  questionText: "Is this a question?",
+  answerList: ["answer A", "answer B", "answer C", "answer D"],
+  correctAnswer: "answer A"
+}
+
+var question4 = {
+  questionText: "Is this a question?",
+  answerList: ["answer A", "answer B", "answer C", "answer D"],
+  correctAnswer: "answer A"
+}
+
+var question5 = {
+  questionText: "Is this a question?",
+  answerList: ["answer A", "answer B", "answer C", "answer D"],
+  correctAnswer: "answer A"
+}
+
+
 // creates timer and counts down from 60 seconds 
 var timeLeft = 60;
 var timer = document.createElement("p")
