@@ -69,6 +69,7 @@ section p {
 }
 
 h2 {
+  font-size: 20px;
   text-align: center;
   align-items: center;
 }
@@ -85,7 +86,12 @@ li {
   margin: 10px auto;
   width: 45%;
   padding: 8px;
-  border-radius: 4px;
+  border-radius: 1rem;
+	border-top: 2px solid grey;
+	border-right: 2px solid rgb(27, 27, 27);
+	border-bottom: 2px solid rgb(27, 27, 27);
+	border-left: 2px solid grey;
+
 }
 
 li:hover {
@@ -93,6 +99,8 @@ li:hover {
   background-color: var(--light);
   color: white;
 }
+
+
 
 input {
   padding: 2px;
@@ -119,7 +127,8 @@ input {
 
 #submit {
   padding: 2px 6px;
-  border-radius: 4px;
+  border-radius: 1rem;
+	font-size: 16px;
   background-color: var(--dark);
   color: white;
 }

@@ -17,7 +17,8 @@ var questions = [
 ];
 
 var wrapper = document.querySelector('#wrapper');
-var startPageEl = document.querySelector('#start');
+var viewScores = document.querySelector('#view-scores')
+var title = document.querySelector('#title');
 var startBtnEl = document.querySelector('#start-button');
 var results = document.querySelector('#results');
 var timer = document.querySelector('#timer');
@@ -39,7 +40,8 @@ startBtnEl.addEventListener('click', startQuiz);
 // Starts the quiz
 function startQuiz(event) {
 	event.preventDefault();
-	startPageEl.setAttribute('style', 'display: none');
+	title.setAttribute('style', 'display: none');
+	viewScores.setAttribute('style', 'display: none');
 	wrapper.setAttribute('style', 'display: inline-block');
 	shuffledQuestions = shuffle(questions);
 	countDown();
@@ -134,6 +136,7 @@ function quizOver() {
 	timer.setAttribute('style', 'display: none');
 	wrapper.setAttribute('style', 'display: none');
 	displayScore.setAttribute('style', 'display: inline-block');
+	viewScores.setAttribute('style', 'display: inline-block');
 	userScore.textContent = 'Final Score: ' + score;
 	endQuiz = false;
 }

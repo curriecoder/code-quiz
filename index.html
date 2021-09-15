@@ -17,42 +17,42 @@ THEN I can save my initials and my score -->
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./assets/css/reset.css">
-    <link rel="stylesheet" href="./assets/css/style.css">
-    <title>Code Quiz</title>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="./assets/css/reset.css">
+	<link rel="stylesheet" href="./assets/css/style.css">
+	<title>Code Quiz</title>
 </head>
 
 <body>
-    <header>
-        <nav>
-            <p id="view-scores"><a href="highscores.html">View Highscores</a></p>
-            <p id="timer"></p>
-        </nav>
-    </header>
-    <main>
-        <section id="start">
-            <h1>currie<span>Coder's</span> Code Quiz</h1>
-            <p>
-                Click the 'Start' button below to begin the quiz!
-                Wrong answers will deduct 10 seconds from your remaining time.
-                Your time at the end of the quiz will be your score.
-            </p>
-            <button id="start-button">Start</button>
-        </section>
-        <section id="wrapper" style="display: none;"></section>
-        <section id="enter-score" style="display: none;">
-            <h2 id="your-score"></h2>
-            <input type="text" id="user-input" placeholder="Enter Your Initials">
-            <button id="submit">Submit</button>
-        </section>
-        <section>
-            <h3 id="results"></h3>
-        </section>
-    </main>
-    <script src="./assets/script/script.js"></script>
+	<header>
+		<nav>
+			<p id="view-scores"><a href="highscores.html">View Highscores</a></p>
+			<p id="timer"></p>
+		</nav>
+	</header>
+	<main>
+		<section id="title">
+			<h1>currie<span>Coder's</span> Code Quiz</h1>
+			<p>
+				Click the 'Start' button below to begin the quiz!
+				Wrong answers will deduct 10 seconds from your remaining time.
+				Your time at the end of the quiz will be your score.
+			</p>
+			<button id="start-button">Start</button>
+		</section>
+		<section id="wrapper" style="display: none;"></section>
+		<section id="enter-score" style="display: none;">
+			<h2 id="your-score"></h2>
+			<input type="text" id="user-input" placeholder="Enter Your Initials">
+			<button id="submit">Submit</button>
+		</section>
+		<section>
+			<h3 id="results"></h3>
+		</section>
+	</main>
+	<script src="./assets/script/script.js"></script>
 </body>
 
 </html>
