@@ -160,6 +160,6 @@ submitBtn.addEventListener('click', function (event) {
 		localStorage.setItem('scores', JSON.stringify(highScores));
 		location.href = 'highscores.html';
 	} else {
-		alert('You have not entered your initials yet!');
+		alert('Please enter your initials.');
 	}
 });
