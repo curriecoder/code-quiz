@@ -64,12 +64,12 @@ button {
   padding: 4px 30px;
   border-radius: 4px;
   font-size: 20px;
-  background-color: var(--light);
+  background-color: var(--dark);
   color: white;
 }
 
 button:hover {
-  background-color: var(--dark);
+  background-color: var(--light);
   cursor: pointer;
 }
 

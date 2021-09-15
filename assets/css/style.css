@@ -13,9 +13,9 @@
 
 /* Elements */
 body {
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-family: monospace;
   background-color: rgb(20, 79, 243);
-  color: rgb(185, 182, 182);
+  color: rgb(224, 224, 224);
 }
 
 header {
@@ -28,7 +28,7 @@ span {
 
 nav {
   display: flex;
-  justify-content: space-between;
+  justify-content: right;
   padding: 20px;
   font-size: 20px;
   font-weight: bolder;
@@ -36,6 +36,7 @@ nav {
 
 a {
   color: rgb(185, 182, 182);
+  text-align: end;
 }
 
 a:hover,
@@ -64,6 +65,7 @@ section h1 {
 
 section p {
   margin: 30px 20px;
+  font-size: 18px;
 }
 
 h2 {
