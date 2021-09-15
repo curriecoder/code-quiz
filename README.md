@@ -8,7 +8,7 @@ This project was motivated by a desire to implement javascript interactive eleme
 
 Instructions: Begin the application by clicking the 'Start' button on the homepage. Then answer the questions as they are presented. User's score will be equal to the time remaining after answering all five questions. High scores can be saved with the user's initials after the quiz is completed. 
 
-  ![screenshot](assets\images\ezgif-2-d2b8b30ba97f.gif)
+  ![screenshot](assets/images/ezgif-2-d2b8b30ba97f.gif)
 
 ## Credits
 
