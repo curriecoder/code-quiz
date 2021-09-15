@@ -6,7 +6,7 @@ This project was motivated by a desire to implement javascript interactive eleme
 
 ## Usage
 
-Instructions: Begin the application by clicking the 'Start' button on the homepage. Then answer the questions as they are presented. User's score will be equal to the time remaining after answering all five questions 
+Instructions: Begin the application by clicking the 'Start' button on the homepage. Then answer the questions as they are presented. User's score will be equal to the time remaining after answering all five questions. High scores can be saved with the user's initials after the quiz is completed. 
 
   ![screenshot](assets\images\ezgif-2-d2b8b30ba97f.gif)
 
@@ -15,6 +15,7 @@ Instructions: Begin the application by clicking the 'Start' button on the homepa
 I would first like to thank the instructors of UPenn LPS Coding Bootcamp class of 08-2021 for continually putting the students at the top of the importance list. Also, huge thanks to Kyle Cook at Web Dev Simplified for making great tutorial videos that helped me make this project. 
 
 https://www.youtube.com/channel/UCFbNIlppjAuEX4znoulh0Cw
+
 https://www.youtube.com/watch?v=riDzcEQbX6k
 
 
