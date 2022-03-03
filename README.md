@@ -2,7 +2,7 @@
 
 Deployed: https://curriecoder.github.io/code-quiz/
 
-Repo: github.com/curriecoder/code-quiz/
+Repo: https://github.com/curriecoder/code-quiz
 
 ## Description
 
