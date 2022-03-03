@@ -1,5 +1,9 @@
 # code-quiz
 
+Deployed: https://curriecoder.github.io/code-quiz/
+
+Repo: github.com/curriecoder/code-quiz/
+
 ## Description
 
 This project was motivated by a desire to implement javascript interactive elements and dynamic HTML and CSS manipulation. This project allows users to take a quiz on the subject of coding.
